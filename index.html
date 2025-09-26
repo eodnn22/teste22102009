@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversidade Marinha Ameaçada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Biodiversidade Marinha Ameaçada</h1>
+        <p>Catálogo digital de espécies marinhas em risco de extinção</p>
+        <div class="status-counts">
+            <div class="status-box em-perigo">4 Em Perigo</div>
+            <div class="status-box pouco-preocupante">1 Pouco Preocupante</div>
+            <div class="status-box quase-ameacada">1 Quase Ameaçada</div>
+        </div>
+    </header>
+
+    <section class="filters">
+        <h2><i class="fas fa-filter"></i> Filtros de Pesquisa</h2>
+        <input type="search" id="search-species" placeholder="Buscar por nome ou nome científico...">
+
+        <select id="conservation-status">
+            <option value="">Filtrar por status de conservação</option>
+            <option value="criticamente ameaçada">Criticamente Ameaçada</option>
+            <option value="em perigo">Em Perigo</option>
+            <option value="vulneravel">Vulnerável</option>
+            <option value="pouco preocupante">Pouco Preocupante</option>
+            <option value="quase ameacada">Quase Ameaçada</option>
+            <option value="vulneravel">Vulnerável</option>
+        </select>
+
+        <input type="text" id="filter-habitat" placeholder="Filtrar por habitat...">
+    </section>
+
+    <main id="species-catalog">
+
+        <div class="species-card" data-status="em perigo" data-habitat="Águas tropicais e subtropicais" data-name="Tartaruga-marinha-verde">
+            <img src="https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/tartarugas-marinhas-e-biodiversidade-marinha-do-leste/comunicacao/ultimas-noticias/nota-de-esclarecimento-do-centro-tamar-icmbio-sobre-a-nova-classificacao-do-status-de-conservacao-da-tartaruga-verde-chelonia-mydas-no-brasil/064.jpg" alt="Tartaruga-marinha-verde">
+            <div class="status-badge en">EN</div>
+            <h3>Tartaruga-marinha-verde</h3>
+            <p class="scientific-name">Chelonia mydas</p>
+            <p><i class="fas fa-globe"></i> Águas tropicais e subtropicais</p>
+             <p>Nível de Ameaça: Crítico (87/100)</p>
+              <div class="threats">
+                  <span>plastic waste</span>
+                  <span>fishing nets</span>
+                    <span>+1 mais</span>
+              </div>
+        </div>
+
+        <div class="species-card" data-status="em perigo" data-habitat="Oceanos profundos em todo o mundo" data-name="Baleia-azul">
+            <img src="https://123ecos.com.br/wp-content/uploads/2025/03/Baleia-azul-Balaenoptera-musculus.jpg" alt="Baleia-azul">
+            <div class="status-badge en">EN</div>
+            <h3>Baleia-azul</h3>
+            <p class="scientific-name">Balaenoptera musculus</p>
+            <p><i class="fas fa-globe"></i> Oceanos profundos em todo o mundo</p>
+             <p>Nível de Ameaça: Crítico (85/100)</p>
+              <div class="threats">
+                  <span>ship strikes</span>
+                  <span>climate change</span>
+                    <span>+1 mais</span>
+              </div>
+        </div>
+
+        <div class="species-card" data-status="em perigo" data-habitat="Águas tropicais e subtropicais" data-name="Tubarão-baleia">
+            <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/nationalgeographic2711493.jpg?w=1600" alt="Tubarão-baleia">
+            <div class="status-badge en">EN</div>
+            <h3>Tubarão-baleia</h3>
+            <p class="scientific-name">Rhincodon typus</p>
+            <p><i class="fas fa-globe"></i> Águas tropicais e subtropicais</p>
+             <p>Nível de Ameaça: Crítico (91/100)</p>
+              <div class="threats">
+                  <span>overfishing</span>
+                  <span>ship strikes</span>
+                    <span>+1 mais</span>
+              </div>
+        </div>
+
+        <div class="species-card" data-status="pouco preocupante" data-habitat="Águas temperadas e tropicais" data-name="Água-viva-imortal">
+            <img src="https://marsemfim.com.br/wp-content/uploads/2014/03/agua_viva_interna.jpg" alt="Água-viva-imortal">
+            <div class="status-badge lc">LC</div>
+            <h3>Água-viva-imortal</h3>
+            <p class="scientific-name">Turritopsis dohrnii</p>
+            <p><i class="fas fa-globe"></i> Águas temperadas e tropicais</p>
+             <p>Nível de Ameaça: Baixo (19/100)</p>
+              <div class="threats">
+                  <span>pollution</span>
+                  <span>ocean acidification</span>
+              </div>
+        </div>
+
+        <div class="species-card" data-status="vulneravel" data-habitat="Recifes de coral do Indo-Pacífico" data-name="Peixe-palhaço">
+            <img src="https://equipamentoparapesca.com.br/wp-content/uploads/2025/07/peixe-palhaaco-1.webp" alt="Peixe-palhaço">
+            <div class="status-badge vu">VU</div>
+            <h3>Peixe-palhaço</h3>
+            <p class="scientific-name">Amphiprioninae</p>
+            <p><i class="fas fa-globe"></i> Recifes de coral do Indo-Pacífico</p>
+            <p>Nível de Ameaça: Moderado (45/100)</p>
+            <div class="threats">
+                <span>Destruição de habitat</span>
+                <span>Coleta para aquários</span>
+            </div>
+        </div>
+
+        <div class="species-card" data-status="quase ameacada" data-habitat="Oceano Atlântico Norte" data-name="Atum-azul">
+            <img src="https://marsemfim.com.br/wp-content/uploads/2023/11/atum-azul-copiar.jpg" alt="Atum-azul">
+             <div class="status-badge nt">NT</div>
+            <h3>Atum-azul</h3>
+            <p class="scientific-name">Thunnus thynnus</p>
+            <p><i class="fas fa-globe"></i> Oceano Atlântico Norte</p>
+            <p>Nível de Ameaça: Quase Ameaçado (60/100)</p>
+            <div class="threats">
+                <span>Sobrepesca</span>
+                <span>Pesca ilegal</span>
+            </div>
+        </div>
+
+        <!-- More species cards go here -->
+    </main>
+
+    <!-- The Modal -->
+    <div id="speciesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" alt="Imagem da Espécie" class="modal-image">
+            <h2 class="modal-title"></h2>
+            <p class="modal-scientific-name"></p>
+            <p class="modal-habitat"><i class="fas fa-globe"></i> <span class="habitat-text"></span></p>
+            <p class="modal-threat-level">Nível de Ameaça: <span class="threat-level-value"></span></p>
+            <div class="modal-threats">
+                <h3>Principais Ameaças</h3>
+                <div class="threats-list"></div>
+            </div>
+            <p class="modal-description">Descrição:</p>
+            <p class="modal-description-content">A tartaruga-marinha-verde é uma das maiores tartarugas marinhas. Alimenta-se principalmente de algas e plantas marinhas quando adulta.</p>          
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
